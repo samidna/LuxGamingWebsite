@@ -1,4 +1,4 @@
-﻿using LuxGamingWebsite.Models;
+﻿using LuxGamingWebsite.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LuxGamingWebsite.Controllers

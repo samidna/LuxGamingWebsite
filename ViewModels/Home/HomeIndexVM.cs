@@ -1,4 +1,4 @@
-﻿using LuxGamingWebsite.Models;
+﻿using LuxGamingWebsite.Models.Entities;
 
 namespace LuxGamingWebsite.ViewModels.Home
 {
@@ -6,6 +6,6 @@ namespace LuxGamingWebsite.ViewModels.Home
     {
         public List<Feature> Features { get; set; }
         public List<Game> Games { get; set; }
-        public Caption Caption { get; set; }
+        public List<Caption> Caption { get; set; }
     }
 }

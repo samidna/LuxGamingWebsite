@@ -1,14 +1,21 @@
 ﻿using LuxGamingWebsite.Models;
+using LuxGamingWebsite.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LuxGamingWebsite.Controllers
 {
     public class ContactController : Controller
     {
+        private readonly DataContext _db;
+        public ContactController(DataContext db)
+        {
+            _db = db;
+        }
+
         public IActionResult Index()
         {
-            Contact contact = new() { Id=1, Title="Contact them", Text="Say GoodBye!", Description="lorem lorem lorem lorem lorem lorem", Adress="Baku,Yasamal,Prospekt", Phone="+9943457126", Email="prospekt@gmail.com" }; 
-            return View(contact);
+            var contacts = _db.Contacts.ToList();
+            return View(contacts);
         }
     }
 }

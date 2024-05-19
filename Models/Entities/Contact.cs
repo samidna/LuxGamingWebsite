@@ -1,6 +1,4 @@
-﻿
-
-namespace LuxGamingWebsite.Models
+﻿namespace LuxGamingWebsite.Models.Entities
 {
     public class Contact
     {
